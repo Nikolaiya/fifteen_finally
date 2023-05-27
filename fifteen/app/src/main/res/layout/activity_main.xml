@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorNight"
+                android:layout_height="wrap_content"
+                android:text="Последние кол-во шагов"/>
+
+            <TextView
+                android:text="Последние время финиша"
+                android:textColor="@color/colorNight"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_last_step"
+                android:textColor="@color/colorNight"
+                android:text="0"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_last_time"
+                android:text="00:00:00"
+                android:textColor="@color/colorNight"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:text="Лучший результат по шагам"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/colorNight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Лучший результат по времени"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/colorNight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_best_step"
+                android:textColor="@color/colorNight"
+                android:text="0"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_best_time"
+                android:text="00:02:33"
+                android:textColor="@color/colorNight"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_start_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Играть" />
+
+        <Button
+            android:text="Настройки"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/button_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>
